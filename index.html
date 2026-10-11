@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReflexLab — Reaction Time Test: How Fast Are Your Reflexes? (ms Score)</title>
+<meta name="description" content="Free reaction time test. Wait for green, click as fast as you can — 5 rounds, average and best scores, percentile-style rating and a saved personal best. Works with mouse, touch and keyboard.">
+<link rel="canonical" href="https://reflexlab.fixoraa.tech/">
+<meta property="og:title" content="ReflexLab — Reaction Time Test: How Fast Are Your Reflexes? (ms Score)">
+<meta property="og:description" content="Free reaction time test. Wait for green, click as fast as you can — 5 rounds, average and best scores, percentile-style rating and a saved personal best. Works with mouse, touch and keyboard.">
+<meta property="og:url" content="https://reflexlab.fixoraa.tech/">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root{--pri:#DC2626;--acc:#16A34A;--bgc:#FEF2F2}
+body{background:var(--bgc);font-family:'Segoe UI',system-ui,sans-serif}
+.pri{background:var(--pri)} .prit{color:var(--pri)} .acct{color:var(--acc)}
+.btn{background:var(--pri);color:#fff;padding:.6rem 1.2rem;border-radius:.6rem;font-weight:600;cursor:pointer;border:none}
+.btn:hover{opacity:.9} .btn2{background:var(--acc);color:#111;padding:.6rem 1.2rem;border-radius:.6rem;font-weight:600;cursor:pointer;border:none}
+input,select,textarea{border:1.5px solid #cbd5e1;border-radius:.55rem;padding:.55rem .7rem;width:100%;background:#fff;color:#0f172a}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--pri);border-color:transparent}
+label{font-size:.83rem;font-weight:600;display:block;margin-bottom:.3rem}
+.card{background:#fff;border-radius:1rem;box-shadow:0 8px 30px rgba(15,23,42,.08);padding:1.4rem}
+article p{margin:.7rem 0;line-height:1.75;color:#334155}
+article h2{font-size:1.45rem;font-weight:800;margin:1.6rem 0 .4rem;color:#0f172a}
+.faq{background:#fff;border-radius:.7rem;padding:.9rem 1.1rem;margin:.55rem 0;box-shadow:0 2px 10px rgba(15,23,42,.05)}
+.faq summary{font-weight:700;cursor:pointer}
+table.dt{width:100%;border-collapse:collapse} table.dt th,table.dt td{border:1px solid #e2e8f0;padding:.45rem .6rem;text-align:left;font-size:.9rem}
+table.dt th{background:#f1f5f9}
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "ReflexLab", "url": "https://reflexlab.fixoraa.tech/", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "description": "Free reaction time test. Wait for green, click as fast as you can \u2014 5 rounds, average and best scores, percentile-style rating and a saved personal best. Works with mouse, touch and keyboard."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a good reaction time?", "acceptedAnswer": {"@type": "Answer", "text": "The global average for a test like this is about 250\u2013270 ms. Under 220 ms is excellent, under 180 ms is elite territory. Remember every device adds a little lag, so compare yourself on the same device over time."}}, {"@type": "Question", "name": "Why do I need five rounds?", "acceptedAnswer": {"@type": "Answer", "text": "Single clicks are luck-prone. Five rounds averaged suppress flukes and reveal your true, consistent speed \u2014 while your best round shows your ceiling. The gap between them tells you whether attention or wiring is your variable."}}, {"@type": "Question", "name": "What happens if I click too early?", "acceptedAnswer": {"@type": "Answer", "text": "The round is voided \u2014 anticipation is not reaction. Wait for the actual green; randomised delays between about 1 and 3.5 seconds make guessing a losing strategy, exactly as in real life."}}, {"@type": "Question", "name": "Can I improve my reaction time?", "acceptedAnswer": {"@type": "Answer", "text": "Raw nerve speed improves only slightly, but consistency, sleep, alertness and pattern recognition improve a lot. Rest is the biggest lever; practice tightens your average; caffeine gives a small, real boost."}}, {"@type": "Question", "name": "Does my device affect the score?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 screens, mice, touch layers and browsers add roughly 10\u201350 ms. Everyone's score includes their hardware, so personal bests are tracked per device (in this browser) and self-comparison is the fairest race."}}, {"@type": "Question", "name": "Is the keyboard or mouse faster?", "acceptedAnswer": {"@type": "Answer", "text": "The spacebar usually wins slightly: one big key, no mouse-travel variance, and a satisfyingly decisive press. Touch sits between the two. Pick one method and stick to it for comparable scores."}}]}</script>
+</head>
+<body id="top">
+<header class="sticky top-0 z-40 shadow-md" style="background:#450A0A">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 py-3 flex items-center justify-between">
+    <a href="#top" class="text-xl font-extrabold tracking-tight" style="color:#FEF2F2">⚡ ReflexLab</a>
+    <nav class="flex gap-5 text-sm font-semibold" style="color:#FEF2F2">
+      <a href="#top" class="hover:underline">Home</a>
+      <a href="https://fixoraa.tech" class="hover:underline">More Tools</a>
+    </nav>
+  </div>
+</header>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pt-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <div class="origin-top scale-[0.44] sm:scale-100 shrink-0">
+        <script>
+          atOptions = { 'key' : '4e68ac77881c17fe128a46565d9a4e8c', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+<main class="mx-auto max-w-6xl px-4 sm:px-6 py-8">
+  <div class="text-center mb-6">
+    <h1 class="text-3xl sm:text-4xl font-extrabold" style="color:#0f172a">Reaction Time Test</h1>
+    <p class="mt-2 text-slate-600 max-w-2xl mx-auto">Simple rules, honest measurement: click start, wait for the red box to turn green, then strike. Five rounds produce your average and best reaction time in milliseconds — plus a rating and a record to beat.</p>
+    <span class="inline-block mt-3 px-3 py-1 rounded-full text-xs font-bold text-white pri">✓ Unlimited Free Usage — No Signup, No Watermark</span>
+  </div>
+  <div class="card max-w-3xl mx-auto text-center">
+  <div id="box" class="rounded-2xl py-20 px-4 text-white text-2xl font-extrabold cursor-pointer select-none" style="background:#DC2626" onclick="hit()">Click START, then wait for green…</div>
+  <div class="flex gap-2 justify-center mt-4 flex-wrap"><button class="btn" onclick="startRun()">▶ Start 5-round test</button><button class="btn2" onclick="resetBest()">Reset personal best</button></div>
+  <div id="rounds" class="flex gap-2 justify-center mt-4 flex-wrap"></div>
+  <div id="result" class="text-xl font-bold mt-3"></div>
+  <div id="best" class="prit font-semibold"></div>
+  <p class="text-sm text-slate-500 mt-2">Keyboard players: press Space when the box turns green. Touch works too — tap the box.</p>
+ </div>
+</main>
+<div class="no-print mx-auto max-w-6xl px-4 sm:px-6 pb-4" role="complementary" aria-label="Advertisement">
+  <div class="mx-auto text-center" style="max-width:728px">
+    <span class="block text-[10px] tracking-[0.18em] uppercase text-slate-400 mb-1.5">Advertisement</span>
+    <div class="flex justify-center overflow-hidden">
+      <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="464498"></script>
+    </div>
+  </div>
+</div>
+<section class="mx-auto max-w-4xl px-4 sm:px-6 pb-6">
+  <article>
+  <h2>The quarter-second that runs your life</h2>
+<p>Between seeing and acting, your nervous system spends roughly a quarter of a second: photons to retina, signals to visual cortex, a decision, motor commands, muscle. That interval — reaction time — decides whether the brake lands before the bumper, whether the fielder's glove closes on the ball, and whether your click beats the other bidder's. ReflexLab measures the simple, honest version: one stimulus, one response, no prediction allowed, five rounds averaged so a single fluke neither crowns nor condemns you. The waiting is randomised precisely so anticipation cannot cheat — click early and the round is void, a rule your visual system will resent and obey.</p>
+<p>The numbers have meaning at human scale. The global average for a visual reaction like this sits near 250–270 milliseconds on desktop devices. Elite competitive gamers cluster under 180; trained sprinters react to a gun in 120–150 (and athletics disqualifies starts under 100 as anticipation, on the grounds that physiology forbids the honest version). Age moves the curve gently — fastest in the twenties, drifting perhaps a millisecond or two per year thereafter — while fatigue, alcohol, distraction and a bad night move it violently, sometimes by 30 percent in a single evening.</p>
+<h2>Why five rounds, and why the average rules</h2>
+<p>A single click is a story; five clicks are a measurement. Your first round carries surprise, your second carries learning, and somewhere in rounds three to five your nervous system shows its unvarnished number. Averaging five suppresses the luck of one brilliant or one blinking attempt, and the best-of-five shown beside it marks your ceiling — the gap between average and best is itself diagnostic: a narrow gap means consistency (the trainable, valuable trait), a wide one means your attention, not your wiring, is the variable. The saved personal best stores your best average, not your best click, for exactly this reason: chasing it trains steadiness, the quality that transfers to sport, driving and play.</p>
+<p>Device honesty matters too, so it is stated plainly: your screen, mouse, touch layer and browser each add latency — typically 10–50 milliseconds in total — to every score, including the record-holders'. Comparisons are therefore fairest against yourself, on the same device, which is precisely the comparison the personal best enforces. Test on your phone and your laptop and you have measured your hardware as much as your reflexes.</p>
+<h2>What moves your score: sleep, caffeine, practice</h2>
+<p>Sleep is the giant lever. One short night can add 20–40 milliseconds and, more dangerously, variance — the occasional 600-millisecond lapse that in traffic is the whole story. Caffeine is a real but modest accelerant, worth perhaps 5–15 milliseconds at ordinary doses and mostly through alertness rather than raw nerve speed. Practice is the hopeful one: simple reaction time improves only slightly with repetition, but your consistency improves a lot, and choice reactions — the kind with decisions attached — improve dramatically as patterns become familiar. That is why athletes drill scenarios, not stopwatches: they are training recognition, the upstream half of every reaction.</p>
+<p>Time of day writes its signature too: most people peak in the late afternoon and trough in the small hours, in step with body temperature. Test yourself at both ends of a day once, and the graph of your own alertness will teach you more about scheduling hard things than any productivity book. The laboratory is one click away, costs thirty seconds, and never flatters.</p>
+<h2>Reaction in the wild: brakes, balls and buzzer-beaters</h2>
+<p>At 100 km/h a car covers 27.8 metres every second; a 250-millisecond reaction spends about 7 of those metres before the brake pedal even moves — roughly a car length and a half, and the difference, in the accident statistics, between the near-miss told as a story and the other kind. This is why following distances are taught in seconds rather than metres: the rule scales automatically with speed because your reaction time does not. Sport inverts the problem deliciously — a cricket ball or tennis serve can arrive faster than pure reaction allows, so elite players read the bowler's shoulder and the server's toss, starting their 'reaction' before the stimulus the rulebook counts. Anticipation is legal everywhere except this test.</p>
+<p>Which is the test's quiet lesson: raw reaction is the floor of performance, not its ceiling. The winners in fast domains build systems — positioning, prediction, pre-commitment — that make their quarter-second sufficient. Measure your floor here; then, in whatever arena matters to you, build the system that makes it enough.</p>
+<h2>How to take the test properly</h2>
+<p>Sit as you would for anything precise: hand resting on the mouse or finger hovering over the box, eyes on the box itself rather than wandering the page, notifications silenced. Take all five rounds in one sitting for a valid average, and resist restarting after round two because it 'felt slow' — feel is a notoriously corrupt stopwatch; the data includes the slow rounds because your life will too. Keyboard players can use the spacebar, which removes mouse-travel variance and is the purist's instrument.</p>
+<p>Then, if you care, retest under single changed conditions — morning versus midnight, rested versus tired, coffee versus none — and keep a small log of averages. Few legal experiments on your own nervous system are this cheap, this quick or this honest. Your reflexes are not a fixed trait you were issued; they are a state you are in, and states can be managed.</p>
+<h2>The rating scale, translated</h2>
+<p>Under 180 milliseconds averaged: genuinely elite company, the range of practised competitive players. 180–220: excellent, clearly faster than the population mean. 220–260: the healthy global average — your wiring is standard-issue good. 260–320: relaxed; if that reading surprises you, audit sleep before blaming age. Beyond 320 on a rested morning deserves a shrug and a retest rather than a worry — device lag, distraction and one voided rhythm explain most such scores, and persistent, real-world slowness is a conversation for a clinician, not a web page. Whatever your number, it is today's — the rematch is one click long.</p>
+<h2>Reflexes across a lifetime</h2>
+<p>Children's reaction times start slow, sharpen through adolescence, and peak in the twenties — the decade when professional gaming and elite sprinting harvest them. The decline after that is real but gentle for simple reactions, on the order of a few milliseconds per decade, and it is vastly outpaced by the gains of anticipation and pattern knowledge: a forty-year-old goalkeeper with average wiring and twenty years of reading strikers will beat a twenty-year-old novice with brilliant wiring to most shots. This is why the test's framing — raw reaction, no prediction — is both the purest measure and the least complete one.</p>
+<p>Treat your own curve as information, not verdict. Test yearly on the same device if you enjoy the ritual; watch the trend, not the day. A sudden, large change that persists across rested mornings is one of the few results here that deserves escalation — to a clinician, with the log in hand. Everything else is sport.</p>
+<h2>A week of experiments in one page</h2>
+<p>Treat the test as a pocket laboratory for a week and it will teach you your own operating manual. Day one: baseline, morning and evening. Day two: after exercise versus after a long screen session. Day three: caffeine versus none. Day four: your best sleep versus your worst. Keep the averages in a note — five numbers, no app — and by day seven you will possess something most people never learn about themselves: a measured map of when your nervous system is sharp and when it is bluffing. Schedule one demanding thing into a sharp window and the experiment has paid for itself; the score, it turns out, was never really about the score.</p>
+  <h2>Frequently Asked Questions</h2>
+  <details class="faq"><summary>What is a good reaction time?</summary><p>The global average for a test like this is about 250–270 ms. Under 220 ms is excellent, under 180 ms is elite territory. Remember every device adds a little lag, so compare yourself on the same device over time.</p></details>
+<details class="faq"><summary>Why do I need five rounds?</summary><p>Single clicks are luck-prone. Five rounds averaged suppress flukes and reveal your true, consistent speed — while your best round shows your ceiling. The gap between them tells you whether attention or wiring is your variable.</p></details>
+<details class="faq"><summary>What happens if I click too early?</summary><p>The round is voided — anticipation is not reaction. Wait for the actual green; randomised delays between about 1 and 3.5 seconds make guessing a losing strategy, exactly as in real life.</p></details>
+<details class="faq"><summary>Can I improve my reaction time?</summary><p>Raw nerve speed improves only slightly, but consistency, sleep, alertness and pattern recognition improve a lot. Rest is the biggest lever; practice tightens your average; caffeine gives a small, real boost.</p></details>
+<details class="faq"><summary>Does my device affect the score?</summary><p>Yes — screens, mice, touch layers and browsers add roughly 10–50 ms. Everyone's score includes their hardware, so personal bests are tracked per device (in this browser) and self-comparison is the fairest race.</p></details>
+<details class="faq"><summary>Is the keyboard or mouse faster?</summary><p>The spacebar usually wins slightly: one big key, no mouse-travel variance, and a satisfyingly decisive press. Touch sits between the two. Pick one method and stick to it for comparable scores.</p></details>
+  </article>
+</section>
+<footer class="mt-6 py-8" style="background:#450A0A;color:#FEF2F2">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 text-center text-sm">
+    <p class="font-bold text-base">ReflexLab</p>
+    <p class="opacity-80 mt-1">Free reaction time test. Wait for green, click as fast as you can — 5 rounds, average and best scores, percentile-style rating and a saved personal best. Works with mouse, touch and keyboard.</p>
+    <p class="mt-2"><a href="#top" class="underline">Home</a> · <a href="https://fixoraa.tech" class="underline">More Tools</a></p>
+    <p class="fx-credit" style="text-align:center;font-size:12.5px;opacity:.62;margin:10px auto 2px;letter-spacing:.01em">Made by <a href="https://fixoraa.tech" target="_blank" rel="noopener" style="color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:2px">Fixoraa</a></p>
+  </div>
+</footer>
+<script>
+
+var state='idle', t0=0, timer=null, scores=[], round=0;
+var box=document.getElementById('box');
+function startRun(){scores=[];round=0;document.getElementById('result').textContent='';nextRound();}
+function nextRound(){
+  round++; setBox('#DC2626','Round '+round+' of 5 — wait for green…'); state='waiting';
+  timer=setTimeout(function(){t0=performance.now();setBox('#16A34A','CLICK!');state='go';}, 900+Math.random()*2600);
+}
+function setBox(c,t){box.style.background=c;box.textContent=t;}
+function hit(){
+  if(state==='waiting'){clearTimeout(timer);setBox('#7C2D12','Too soon! That round is void — click Start to retry.');state='idle';return;}
+  if(state!=='go')return;
+  var ms=Math.round(performance.now()-t0); scores.push(ms); state='idle';
+  document.getElementById('rounds').innerHTML=scores.map(function(s){return '<span class="px-3 py-1 rounded-full bg-red-100 font-bold">'+s+' ms</span>';}).join('');
+  if(scores.length<5){setBox('#0369A1',ms+' ms! Click the box for the next round…');state='between';}
+  else finish();
+}
+box.onclick=function(){ if(state==='between'){nextRound();} else hit(); };
+document.addEventListener('keydown',function(e){if(e.code==='Space'){e.preventDefault(); if(state==='between')nextRound(); else hit();}});
+function rating(avg){if(avg<180)return '⚡ Elite — top few percent territory';if(avg<220)return '🚀 Excellent — faster than most people';if(avg<260)return '👍 Good — around the global average';if(avg<320)return '🐢 Relaxed — caffeine, sleep or practice will move this';return '🦥 Leisurely — beware: fatigue, distraction and device lag all count';}
+function finish(){
+  var avg=Math.round(scores.reduce(function(a,b){return a+b;},0)/scores.length), best=Math.min.apply(null,scores);
+  setBox('#16A34A','Done! Average '+avg+' ms');
+  document.getElementById('result').textContent='Average: '+avg+' ms · Best: '+best+' ms — '+rating(avg);
+  var pb=+localStorage.getItem('rl-best')||0;
+  if(!pb||avg<pb){localStorage.setItem('rl-best',avg);pb=avg;document.getElementById('result').textContent+=' · 🏆 New personal best!';}
+  showBest();
+}
+function showBest(){var pb=+localStorage.getItem('rl-best')||0;document.getElementById('best').textContent=pb?('Your saved personal best average: '+pb+' ms'):'No personal best saved yet — finish a 5-round test.';}
+function resetBest(){localStorage.removeItem('rl-best');showBest();}
+showBest();
+
+</script>
+</body>
+</html>
